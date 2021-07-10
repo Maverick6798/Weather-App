@@ -13,16 +13,14 @@ export default createMuiTheme({
             }
         },
         MuiInput:{
+            root:{
+                focused:{
+                    color: "red"
+                }
+            },
             underline:{
                 color: "red",
             }
         },
-        MuiInput:{
-            root:{
-            focused:{
-                color: "red"
-            }
-        }
-    }
     }
 })

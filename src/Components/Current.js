@@ -63,7 +63,7 @@ const Current = (data,data1) => {
     const handleClose = () => {
         setOpen(false);
     };
-    const url="http://openweathermap.org/img/wn/"+`${data.data.weather[0].icon}`+"@4x.png"
+    const url=`http://openweathermap.org/img/wn/${data.data.weather[0].icon}@4x.png`
     console.log(data.data)
     return(
         <>
