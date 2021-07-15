@@ -32,7 +32,7 @@ const useStyles=makeStyles((theme) => ({
     },
     paper: {
         width:"60%",
-        height: "70%",
+        height: "75%",
         borderRadius: 20,
         boxShadow: theme.shadows[5],
         padding: theme.spacing(4, 4, 4),
@@ -107,7 +107,7 @@ const Current = (data,data1) => {
                     <Typography variant="h4" align="center">Humidity</Typography>
                     <Typography variant="h5" className={classes.content} align="center" fontFamily="poppins-italic">{data.data.main?.humidity}%</Typography>
                 </Box>
-                <Divider orientation="vertical" light={true}></Divider>
+                <Divider orientation="vertical" light={true} flexItems></Divider>
                 <Box>
                     <Typography variant="h4" align="center">Sunset</Typography>
                     <Typography variant="h5" className={classes.content} align="center">{new Date(data.data.sys?.sunset * 1000).toLocaleTimeString()}</Typography>
